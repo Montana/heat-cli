@@ -17,6 +17,6 @@ So you'd run `heat -z` to get the weather as an example. This is what `heat -z' 
 
 <img width="895" alt="Screen Shot 2022-07-20 at 4 51 05 PM" src="https://user-images.githubusercontent.com/20936398/180101609-85896117-d40b-43a9-bf37-640154c628eb.png">
 
-Let's say if you wanted to know the version of `heat-cli`, run heat -v:
+Let's say if you wanted to know the version of `heat-cli`, run `heat -v`:
 
 <img width="528" alt="Screen Shot 2022-07-20 at 4 51 14 PM" src="https://user-images.githubusercontent.com/20936398/180101643-f703b3b1-5051-4dac-805e-b7ff6a0c1dd7.png">
