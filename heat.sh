@@ -20,8 +20,7 @@ Available actions:
 Actions available for compute instances only:
     ac
     temp
-    heat                --payload
- 
+    heat                --payload 
 Options:
     -d, --payload       Payload to send with request
     -h, --help          Display this usage message and exit
