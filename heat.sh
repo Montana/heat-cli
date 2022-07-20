@@ -11,7 +11,7 @@ usage() {
 
     cat << EOF
 Name:
-    heat-cli $VERSION by Montana Mendy <montana@linux.com
+    heat-cli $VERSION by Montana Mendy <montana@linux.com>
 Usage:
     $PROGNAME [action] [id] [option ...]
 Available actions:
