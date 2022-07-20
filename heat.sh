@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while getopts 'lvrha' OPTION; do
+while getopts 'lvrhac' OPTION; do
 
   case "$OPTION" in
     l)
@@ -19,8 +19,8 @@ while getopts 'lvrha' OPTION; do
       avalue="$OPTARG"
       echo "The value provided is $OPTARG"
       ;;
-    ?)
-      echo "script usage: $(basename \$0) [-l] [-h] [-v] [-r] [-a somevalue]" >&2
+    c)
+      echo "USAGE: $(basename \$0) [-l] [-h] [-v] [-r] [-a somevalue]" >&2
       exit 1
       ;;
   esac
