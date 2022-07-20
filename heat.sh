@@ -7,7 +7,7 @@ while getopts 'lvrha' OPTION; do
       echo "heat-cli is installed"
       ;;
     v)
-    echo "version 1.0 by Montana Mendy"
+    echo "heat-cli version 1.0 by Montana Mendy"
       ;;
     r)
     echo "Turning the heat up at Facebook"
