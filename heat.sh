@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while getopts 'lvrhac' OPTION; do
+while getopts 'lvrhazc' OPTION; do
 
   case "$OPTION" in
     l)
@@ -19,8 +19,13 @@ while getopts 'lvrhac' OPTION; do
       avalue="$OPTARG"
       echo "The value provided is $OPTARG"
       ;;
+    z)
+      BASEURL="http://wttr.in/Santa+Monica+California"
+      method="curl -4"
+      $method $BASEURL$1
+      ;;
     c)
-      echo "USAGE: $(basename \$0) [-l] [-h] [-v] [-r] [-a somevalue]" >&2
+      echo "heat-cli USAGE: $(basename \$0) [-l] [-h] [-v] [-r] [z] [-a somevalue]" >&2
       exit 1
       ;;
   esac
