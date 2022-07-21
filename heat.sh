@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while getopts 'lvrhazc' OPTION; do
+while getopts 'lvrhtazc' OPTION; do
 
   case "$OPTION" in
     l)
@@ -14,6 +14,9 @@ while getopts 'lvrhazc' OPTION; do
       ;;
     h)
       echo "The heat is rising"
+      ;;
+    t) 
+      sh ./lookBusy.sh
       ;;
     a)
       avalue="$OPTARG"
