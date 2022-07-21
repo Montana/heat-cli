@@ -20,7 +20,7 @@ while getopts 'lvrhtazc' OPTION; do
       ;;
     a)
       avalue="$OPTARG"
-      echo "The value provided is $OPTARG"
+      echo "The pressure method will be in heat-cli v1.2"
       ;;
     z)
       BASEURL="http://wttr.in/Santa+Monica+California"
@@ -28,7 +28,7 @@ while getopts 'lvrhtazc' OPTION; do
       $method $BASEURL$1
       ;;
     c)
-      echo "heat-cli USAGE: $(basename \$0) [-l] [-h] [-v] [-r] [z] [-a somevalue]" >&2
+      echo "heat-cli USAGE: $(basename \$0) [-l] [-h] [-v] [-r] [-z] [-t] [-a somevalue]" >&2
       exit 1
       ;;
   esac
