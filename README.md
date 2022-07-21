@@ -1,7 +1,8 @@
+[![Build Status](https://app.travis-ci.com/Montana/heat-cli.svg?branch=master)](https://app.travis-ci.com/Montana/heat-cli)
+
 # heat-cli
 
 ![heat-cli](https://user-images.githubusercontent.com/20936398/180102810-9eedbee0-aa9e-4840-9a61-c0e2c05cb7da.png)
-
 
 ## Usage
 
