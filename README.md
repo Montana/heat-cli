@@ -1,5 +1,8 @@
 # heat-cli
 
+![heat-cli](https://user-images.githubusercontent.com/20936398/180102810-9eedbee0-aa9e-4840-9a61-c0e2c05cb7da.png)
+
+
 ## Usage
 
 Practical usage of Heat is to clone this repo, install `heat.sh` by running `chmod u+x heat.sh`, then rename `heat.sh` to `heat`, and place it in your `/usr/local/bin` directory. 
