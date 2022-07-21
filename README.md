@@ -2,6 +2,8 @@
 
 # heat-cli
 
+Heat is a collection of fun tools that have nothing to do with one another. It's a Swiss army knife of fun in the CLI, look busy, check the weather, ping an API, and a lot more! Functionality will be added.
+
 ![heat-cli](https://user-images.githubusercontent.com/20936398/180102810-9eedbee0-aa9e-4840-9a61-c0e2c05cb7da.png)
 
 ## Usage
