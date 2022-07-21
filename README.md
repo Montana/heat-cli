@@ -16,6 +16,7 @@ Practical usage of Heat is to clone this repo, install `heat.sh` by running `chm
 - [h] - see if heat is working
 - [z] - check weather 
 - [c] - usage
+- [t] - look busy 
 
 So you'd run `heat -z` to get the weather as an example. This is what `heat -z` looks like: 
 
