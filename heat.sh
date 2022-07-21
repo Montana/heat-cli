@@ -13,7 +13,7 @@ while getopts 'lvrhazc' OPTION; do
     echo "Turning the heat up at Facebook"
       ;;
     h)
-      echo "you have supplied the -h option"
+      echo "The heat is rising"
       ;;
     a)
       avalue="$OPTARG"
