@@ -24,6 +24,29 @@ So you'd run `heat -z` to get the weather as an example. This is what `heat -z` 
 
 <img width="895" alt="Screen Shot 2022-07-20 at 4 51 05 PM" src="https://user-images.githubusercontent.com/20936398/180101609-85896117-d40b-43a9-bf37-640154c628eb.png">
 
-Let's say if you wanted to know the version of `heat-cli`, run `heat -v`:
+## Travis CI
 
-<img width="528" alt="Screen Shot 2022-07-20 at 4 51 14 PM" src="https://user-images.githubusercontent.com/20936398/180101643-f703b3b1-5051-4dac-805e-b7ff6a0c1dd7.png">
+Here's the current `.travis.yml` file I've created for my project called `heat-cli`: 
+
+```yaml
+language: shell 
+before_script: 
+  - chmod u+x heat 
+  - sudo chmod +x /usr/local/bin
+  - sudo mv heat /usr/local/bin
+script: 
+  - heat -v 
+  - heat -c 
+  - heat -z
+```
+
+In the above `.travis.yml` I've instructed Travis to change permissions to some directories, move the file entitled `heat`, which is `heat-cli`, over to `/usr/local/bin`. You'll then notice I run Heat by just running some test commands, such as: 
+
+```bash
+heat -v 
+heat -c 
+heat -z
+```
+
+
+<img width="1338" alt="Screen Shot 2022-07-21 at 6 10 06 PM" src="https://user-images.githubusercontent.com/20936398/180340384-43a7a7da-49f7-4fad-afb6-15b9eab5f992.png">
