@@ -3,4 +3,6 @@ before_script:
   - chmod u+x heat 
   - sudo chmod +x /usr/local/bin
   - sudo mv heat /usr/local/bin
-script: heat -v 
+script: 
+  - heat -v 
+  - heat -z
