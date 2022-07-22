@@ -2,5 +2,5 @@ language: shell
 before_script: 
   - chmod u+x heat.sh  
   - sudo chmod +x /usr/local/bin
-  - sudo chmod +x mv heat.sh /usr/local/bin 
+  - sudo mv heat.sh /usr/bin
 script: heat -v 
