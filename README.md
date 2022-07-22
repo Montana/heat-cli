@@ -8,7 +8,7 @@ Heat is a collection of fun tools that have nothing to do with one another. It's
 
 ## Usage
 
-Practical usage of Heat is to clone this repo, install `heat.sh` by running `chmod u+x heat.sh`, then rename `heat.sh` to `heat`, and place it in your `/usr/local/bin` directory. 
+Practical usage of Heat is to clone this repo, install `heat` by running `chmod u+x heat`. Then place Heat in your `/usr/local/bin` directory. 
 
 ## Manpage
 
@@ -36,6 +36,7 @@ before_script:
   - sudo mv heat /usr/local/bin
 script: 
   - heat -v 
+  - heat -t # Fetches older versions of the Linux kernel.
   - heat -c 
   - heat -z
 ```
@@ -44,6 +45,7 @@ In the above `.travis.yml` I've instructed Travis to change permissions to some 
 
 ```bash
 heat -v 
+heat -t
 heat -c 
 heat -z
 ```
@@ -51,6 +53,8 @@ heat -z
 This is what it will look like if your build is successful, it's going to call a weather API and spit the results out in a VM:
 
 <img width="1338" alt="Screen Shot 2022-07-21 at 6 10 06 PM" src="https://user-images.githubusercontent.com/20936398/180340384-43a7a7da-49f7-4fad-afb6-15b9eab5f992.png">
+
+Using the `LookBusy` function in Heat is quite simple. Just add `heat -t`, this will make you look busy if someone looks at your monitor and you're in the CLI. You'll need to set a `sleep` flag, so this ultimately gets cancelled, if you don't Travis will end up getting stuck. So just add something like `sleep 20`. 
 
 ## Conclusion 
 
