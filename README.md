@@ -48,5 +48,14 @@ heat -c
 heat -z
 ```
 
+This is what it will look like if your build is successful, it's going to call a weather API and spit the results out in a VM:
 
 <img width="1338" alt="Screen Shot 2022-07-21 at 6 10 06 PM" src="https://user-images.githubusercontent.com/20936398/180340384-43a7a7da-49f7-4fad-afb6-15b9eab5f992.png">
+
+## Conclusion 
+
+Turn up the heat, and try Heat out yourself.
+
+If you have any questions about Heat please email me at [montana@linux.com](mailto:montana@linux.com).
+
+* Author - Montana Mendy
