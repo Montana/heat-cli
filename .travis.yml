@@ -1,3 +1,5 @@
 language: shell 
-before_script: chmod u+x heat.sh 
-script: ./heat.sh -v
+before_script: 
+  - chmod u+x heat.sh  
+  - mv heat.sh /usr/local/bin 
+script: heat -v 
